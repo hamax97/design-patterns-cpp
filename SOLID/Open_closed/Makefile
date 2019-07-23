@@ -1,6 +1,6 @@
-TARGET=srp
+TARGET=ocp_with_specification_pattern
 CPPFLAGS=
-CXXFLAGS=-std=c++11 -I$(BOOST_ROOT)/boost
+CXXFLAGS=-std=c++11
 LDFLAGS=
 
 all: $(TARGET)

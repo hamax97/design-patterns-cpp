@@ -1,4 +1,5 @@
-TARGET=		# Type the name of your .cpp file here.
+# Set target to your .cpp file name
+TARGET=
 CPPFLAGS=
 CXXFLAGS=-std=c++11 -I$(BOOST_ROOT)/boost
 LDFLAGS=
@@ -6,7 +7,7 @@ LDFLAGS=
 all: $(TARGET)
 
 $(TARGET): $(TARGET).o
-	g++ $< -o $@ $(CXXFLAGS) $(LDFLAGS)
+	g++ $(CXXFLAGS) $< -o $@ $(LDFLAGS)
 
 $(TARGET).o: $(TARGET).cpp
 	g++ $(CXXFLAGS) -c $< -o $@
