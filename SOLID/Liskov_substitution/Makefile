@@ -1,6 +1,7 @@
-TARGET=CREATIONAL_srp
+# Set target to your .cpp file name
+TARGET=CREATIONAL_lsp
 CPPFLAGS=
-CXXFLAGS=-std=c++11 -I$(BOOST_ROOT)/boost
+CXXFLAGS=-std=c++11
 LDFLAGS=
 
 all: $(TARGET)
