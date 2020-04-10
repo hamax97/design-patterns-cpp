@@ -53,8 +53,11 @@ struct ProductFilter {
   // you would do this.
   // ----------------------------------------------------------------------
   // A pattern called THE SPECIFICATION PATTERN can be used to overcome this
-  // situation. This patter is related to working with data.
+  // situation. This pattern is related to working with data.
 };
+
+template <typename T> struct Specification;
+template <typename T> struct AndSpecification;
 
 // The Specification interface.
 template <typename T> struct Specification {
@@ -62,10 +65,9 @@ template <typename T> struct Specification {
   // Defined through inheritance.
   virtual bool is_satisfied(T *item) = 0;
 
-  // Breaks the compilation due that the function does not exist.
-  // AndSpecification<T> operator&&(Specification<T>&& other) {
-  //   return AndSpecification<T>(this, other);
-  // }
+  AndSpecification<T> operator&&(Specification<T>&& other) {
+    return AndSpecification<T>(*this, other);
+  }
 };
 
 // This interface should be implemented by every type of filter.
@@ -149,10 +151,10 @@ int main() {
   // This is now better, but we are creating too many variables:
   // green, large, green_and_large. To avoid this you can overload
   // the && operator in the Specification template ...
-  // auto spec = ColorSpecification(Color::green)
-  //   && SizeSpecification(Size::large);
-  // for (auto& item : bf.filter(items, spec))
-  //   cout << item->name << " is green and large\n";
+  auto spec = ColorSpecification(Color::green) &&
+    SizeSpecification(Size::large);
+  for (auto& item : bf.filter(items, spec))
+    cout << item->name << " is green and large\n";
 
   return 0;
 }

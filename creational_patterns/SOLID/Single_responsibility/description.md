@@ -1,5 +1,4 @@
-SINGLE RESPONSIBILITY PRINCIPLE
-===============================
+# SINGLE RESPONSIBILITY PRINCIPLE
 
 * Creational pattern.
 * A class should have a SINGLE reason to change.

@@ -1,5 +1,4 @@
-SOLID DESIGN PRINCIPLES
-#######################
+# SOLID DESIGN PRINCIPLES
 
 Object-Oriented Programming principles introduced by Robert C. Martin a.k.a Uncle Bob.
 
