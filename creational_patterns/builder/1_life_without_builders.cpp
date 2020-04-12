@@ -16,6 +16,7 @@ int main() {
   output += "</p>";
   cout << output << endl;
 
+  // This approach might be better than the used above.
   string words[] = {"hello", "world"};
   ostringstream oss;
   oss << "<ul>\n";
@@ -25,6 +26,7 @@ int main() {
   cout << oss.str() << endl;
 
   /*
+   * But ...
    * HTML is structured, it has paragraphs, lists, text items.
    * It defines which tags can be inside other tags, etc. But none of these
    * is being enforced here, none of these structures is being presented
@@ -33,6 +35,8 @@ int main() {
    * The idea behind the BUILDER DESIGN PATTERN is that instead of having
    * those string concatenations, you should have an object that supports
    * all these transformations.
+   *
+   * See 2_builder.cpp
    */
   return 0;
 }

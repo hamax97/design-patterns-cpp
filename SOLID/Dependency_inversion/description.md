@@ -1,5 +1,4 @@
-DEPENDENCY INVERSION PRINCIPLE
-==============================
+# DEPENDENCY INVERSION PRINCIPLE
 
 It consists about two main aruments:
 1. High-level modules shouldn't depend on low-level modules. Both should depend on abstractions.
