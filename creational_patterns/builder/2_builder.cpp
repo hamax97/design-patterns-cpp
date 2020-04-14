@@ -79,5 +79,11 @@ int main() {
   builder.add_child("li", "world");
   cout << builder.str() << endl;
 
+  // Note that we are adding two childs using the add_child consecutively.
+  // There is a way of making it simpler and nicer for the user. For
+  // example:
+  // builder.add_child().add_child();
+  // That is called a fluent interface, see 3_fluent_builder.cpp
+
   return 0;
 }
