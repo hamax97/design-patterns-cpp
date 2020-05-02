@@ -1,6 +1,6 @@
 # DEPENDENCY INVERSION PRINCIPLE
 
-It consists about two main aruments:
+It consists about two main arguments:
 1. High-level modules shouldn't depend on low-level modules. Both should depend on abstractions.
    That is, insted of depending on a concrete type you want to be as general
    as possible. You want to use an interface that provides the necessary
