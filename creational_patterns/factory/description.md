@@ -10,4 +10,10 @@
     + Factory method.
     + Factory class.
     + Hierarchy of Factories with Abstract Factory.
-  - The object creation is reduced mostly to a single call, unlinke builder.
+  - The object creation is reduced mostly to a single call, unlike builder.
+
+## SUMMARY
+
+* A FACTORY METHODS is a static method that creates objects.
+* A FACTORY can be external or reside inside the object as an inner class (which allow access to private members, so avoiding friend classes).
+* Hierarchies of factories can be used to create related objects (not very common today).
