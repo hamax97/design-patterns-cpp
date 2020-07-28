@@ -61,7 +61,7 @@ int main() {
   // See 1_motivation.cpp to understand what problem is being solved.
 
   // Creating john (the prototype) like this, might not be convenient.
-  // You can have a nicer API for the user, something that returns to thi
+  // You can have a nicer API for the user, something that returns to the
   // the prototype ...
   //Contact john {"John Doe", new Address {"123 East Dr", "London", 123}};
 

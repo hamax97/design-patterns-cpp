@@ -1,0 +1,1 @@
+add_executable(SOLID_Interface_Segregation CREATIONAL_isp.cpp)

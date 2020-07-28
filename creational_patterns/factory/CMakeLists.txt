@@ -1,0 +1,6 @@
+add_executable(factory_1_motivation 1_motivation.cpp)
+add_executable(factory_2_factory_method 2_factory_method.cpp)
+add_executable(factory_3_factory 3_factory.cpp)
+add_executable(factory_4_inner_factory 4_inner_factory.cpp)
+add_subdirectory(5_abstract_factory)
+add_subdirectory(6_functional_factory)

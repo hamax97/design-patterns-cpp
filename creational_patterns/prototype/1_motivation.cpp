@@ -26,8 +26,8 @@ int main() {
   Contact john {"John Doe", Address {"123 East Dr", "London", 123}};
   Contact jane {"Jame Smith", Address {"123 East Dr", "London", 103}};
 
-  // Suppose you many more contacts in the same building.
-  // Is it really worth it replicating what is above, again and again ...
+  // Suppose you have many more contacts in the same building.
+  // Is it really worth it replicating what is above, again and again ...?
   // Contact jerardo {"Jerardo Perez", Address {"123 East Dr", "London", 103}};
   Contact jerardo = john;
   jerardo.name = "Jerardo Perez";

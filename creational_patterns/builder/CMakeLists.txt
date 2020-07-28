@@ -1,0 +1,5 @@
+add_executable(builder_1_life_without_builders 1_life_without_builders.cpp)
+add_executable(builder_2_builder 2_builder.cpp)
+add_executable(builder_3_fluent_builder 3_fluent_builder.cpp)
+add_executable(builder_4_groovy_style_builder 4_groovy_style_builder.cpp)
+add_subdirectory(5_facet_builder)

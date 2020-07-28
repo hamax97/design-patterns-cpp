@@ -1,0 +1,1 @@
+add_executable(SOLID_Liskov_Substitution CREATIONAL_lsp.cpp)

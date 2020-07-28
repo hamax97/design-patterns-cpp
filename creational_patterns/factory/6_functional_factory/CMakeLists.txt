@@ -1,0 +1,1 @@
+add_executable(factory_6_functional_factory 6_functional_factory.cpp)
