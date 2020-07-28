@@ -2,25 +2,19 @@
 
 Description and examples of many of the design principles using the C++ programming language. The design principles presented here are:
 
-* SOLID design principles.
-* Creational design principles.
-* Structural design principles.
-* Behavioral design principles.
+* [SOLID](SOLID/README.md) design principles.
+* [Creational](./creational_patterns) design principles.
 
-Even though there are only three types of them here, they are classified in:
+# Gamma Categorization
+Design Patterns are typically split into three categories.
 
-## Creational patterns.
-These patterns are all about class instantiation. They are sub-divided into:
-* Class-creational patterns: Use inheritance effectively in the instantiation process.
-* Object-creational patterns: Use delegation effectively in the instantiation process.
+* [Creational Patterns](./creational_patterns/README.md).
 
-## Structural patterns.
-These patterns are all about class and object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
+* Structural Patterns
+  + Concerned with the structure (e.g, class members).
+  + Many patterns are wrappers that mimic the undlerlying class' interface.
+  + Stress the importance of good API design.
 
-## Behavioral patterns.
-Patterns that are most specifically concerned about object communication.
-
-## Concurrency patterns.
-## Data Access patterns.
-## Enterprise patterns.
-## Real-Time patterns.
+* Behavioral Patterns
+  + They are all different; no central theme.
+  + Commonly referred to object communication.

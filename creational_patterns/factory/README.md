@@ -1,6 +1,5 @@
-# FACTORY AND ABSTRACT FACTORY
+# Factory and Abstract Factory
 
-* Creational pattern.
 * Used when the object construction is becoming complicated.
 * Used when cannot overload function with same set of arguments with different names.
 * Used to avoid super big constructors with default arguments.
@@ -12,8 +11,17 @@
     + Hierarchy of Factories with Abstract Factory.
   - The object creation is reduced mostly to a single call, unlike builder.
 
-## SUMMARY
+## Summary
 
 * A FACTORY METHODS is a static method that creates objects.
 * A FACTORY can be external or reside inside the object as an inner class (which allow access to private members, so avoiding friend classes).
 * Hierarchies of factories can be used to create related objects (not very common today).
+
+## Examples
+
+1. [Motivation](1_motivation.cpp).
+2. [Factory method](2_factory_method.cpp).
+3. [Factory](3_factory.cpp).
+4. [Inner factory](4_inner_factory.cpp).
+5. [Abstract factory](5_abstract_factory).
+6. [Functional factory](6_functional_factory).

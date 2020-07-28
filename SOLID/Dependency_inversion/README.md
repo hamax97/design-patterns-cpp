@@ -1,4 +1,4 @@
-# DEPENDENCY INVERSION PRINCIPLE
+# Dependency Inversion Principle
 
 It consists about two main arguments:
 1. High-level modules shouldn't depend on low-level modules. Both should depend on abstractions.
@@ -11,3 +11,5 @@ It consists about two main arguments:
    Details should depend on abstractions.
 
 * Best way of defining dependencies between objects.
+
+[Example](dip.cpp).

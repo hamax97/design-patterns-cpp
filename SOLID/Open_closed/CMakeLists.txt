@@ -1,1 +1,1 @@
-add_executable(SOLID_Open_Closed CREATIONAL_ocp_with_specification_pattern.cpp)
+add_executable(SOLID_Open_Closed ocp_with_specification_pattern.cpp)
